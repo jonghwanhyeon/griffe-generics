@@ -8,7 +8,7 @@ Without extension:
 ![Without Extension](https://github.com/jonghwanhyeon/griffe-generics/raw/main/assets/without-extension.png)
 
 With extension:
-![With Extension](https://github.com/jonghwanhyeon/griffe-generics/raw/main/assets/without-extension.png)
+![With Extension](https://github.com/jonghwanhyeon/griffe-generics/raw/main/assets/with-extension.png)
 
 ## Install
 To install **griffe-generics**, simply use pip:
