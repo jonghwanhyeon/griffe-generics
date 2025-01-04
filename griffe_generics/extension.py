@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import Any, Optional
 
 from griffe import Attribute, Class, ExprName, Extension, Function, Module, Object
 
@@ -13,7 +13,7 @@ from griffe_generics.utils import deepcopy
 class GenericsExtension(Extension):
     _context: GenericsContext
 
-    def on_package_loaded(self, *, pkg: Module) -> None:
+    def on_package_loaded(self, *, pkg: Module, **kwargs: Any) -> None:
         self._context = GenericsInspector().inspect(pkg)
 
         for cls in walk_objects_of(pkg, type=Class):
